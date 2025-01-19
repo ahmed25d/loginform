@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>     
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .login-container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <script>
+    // Create an object to store 100 usernames and passwords
+    const credentials = {
+      "Ahmed Samy": "AhmedSamy123",
+      "Ibrahim Yasser": "IbrahimYasser123",
+      "User3": "Password3",
+      "User4": "Password4",
+      "User5": "Password5",
+      "User6": "Password6",
+      "User7": "Password7",
+      "User8": "Password8",
+      "User9": "Password9",
+      "User10": "Password10",
+      "User11": "Password11",
+      "User12": "Password12",
+      "User13": "Password13",
+      "User14": "Password14",
+      "User15": "Password15",
+      "User16": "Password16",
+      "User17": "Password17",
+      "User18": "Password18",
+      "User19": "Password19",
+      "User20": "Password20",
+      "User21": "Password21",
+      "User22": "Password22",
+      "User23": "Password23",
+      "User24": "Password24",
+      "User25": "Password25",
+      "User26": "Password26",
+      "User27": "Password27",
+      "User28": "Password28",
+      "User29": "Password29",
+      "User30": "Password30",
+      "User31": "Password31",
+      "User32": "Password32",
+      "User33": "Password33",
+      "User34": "Password34",
+      "User35": "Password35",
+      "User36": "Password36",
+      "User37": "Password37",
+      "User38": "Password38",
+      "User39": "Password39",
+      "User40": "Password40",
+      "User41": "Password41",
+      "User42": "Password42",
+      "User43": "Password43",
+      "User44": "Password44",
+      "User45": "Password45",
+      "User46": "Password46",
+      "User47": "Password47",
+      "User48": "Password48",
+      "User49": "Password49",
+      "User50": "Password50",
+      "User51": "Password51",
+      "User52": "Password52",
+      "User53": "Password53",
+      "User54": "Password54",
+      "User55": "Password55",
+      "User56": "Password56",
+      "User57": "Password57",
+      "User58": "Password58",
+      "User59": "Password59",
+      "User60": "Password60",
+      "User61": "Password61",
+      "User62": "Password62",
+      "User63": "Password63",
+      "User64": "Password64",
+      "User65": "Password65",
+      "User66": "Password66",
+      "User67": "Password67",
+      "User68": "Password68",
+      "User69": "Password69",
+      "User70": "Password70",
+      "User71": "Password71",
+      "User72": "Password72",
+      "User73": "Password73",
+      "User74": "Password74",
+      "User75": "Password75",
+      "User76": "Password76",
+      "User77": "Password77",
+      "User78": "Password78",
+      "User79": "Password79",
+      "User80": "Password80",
+      "User81": "Password81",
+      "User82": "Password82",
+      "User83": "Password83",
+      "User84": "Password84",
+      "User85": "Password85",
+      "User86": "Password86",
+      "User87": "Password87",
+      "User88": "Password88",
+      "User89": "Password89",
+      "User90": "Password90",
+      "User91": "Password91",
+      "User92": "Password92",
+      "User93": "Password93",
+      "User94": "Password94",
+      "User95": "Password95",
+      "User96": "Password96",
+      "User97": "Password97",
+      "User98": "Password98",
+      "User99": "Password99",
+      "User100": "Password100"
+    };
+
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting
+
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      // Debugging console log to check inputs
+      console.log("Username entered:", username);
+      console.log("Password entered:", password);
+
+      // Validate credentials
+      if (credentials[username] === password) {
+        alert("Login successful!");
+        window.location.href = "https://hatmenmasr.my.canva.site/dagczuihviw"; // Redirect to the external site
+      } else {
+        alert("Invalid username or password.");
+      }
+    });
+  </script>
+</body>
+</html>
